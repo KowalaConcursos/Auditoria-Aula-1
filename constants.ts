@@ -1,4 +1,3 @@
-
 import type { DayData, Badge } from './types';
 import { BookOpenIcon, CheckBadgeIcon, PencilSquareIcon, SparklesIcon, TrophyIcon } from './components/Icons';
 
@@ -155,11 +154,11 @@ export const WEEK_LESSON: DayData[] = [
 ];
 
 export const BADGES: Badge[] = [
-    { id: 'primeiro-passo', name: 'Primeiro Passo', description: 'Você começou sua jornada de estudo!', icon: SparklesIcon, color: 'text-green-400' },
-    { id: 'leitor-fiel', name: 'Leitor Fiel', description: 'Estudou a lição por 3 dias.', icon: BookOpenIcon, color: 'text-sky-400' },
-    { id: 'anotador', name: 'Anotador', description: 'Fez 3 anotações pessoais.', icon: PencilSquareIcon, color: 'text-amber-400' },
-    { id: 'estrategista', name: 'Estrategista', description: 'Acertou todos os quizzes!', icon: CheckBadgeIcon, color: 'text-violet-400' },
-    { id: 'semana-concluida', name: 'Semana Concluída', description: 'Parabéns! Você completou a semana!', icon: TrophyIcon, color: 'text-yellow-400' },
+    { id: 'primeiro-passo', name: 'Primeiro Passo', description: 'Você começou sua jornada de estudo!', icon: SparklesIcon, styleClasses: 'text-green-300 bg-green-500/10 border-green-400/30 hover:shadow-green-400/20' },
+    { id: 'leitor-fiel', name: 'Leitor Fiel', description: 'Estudou a lição por 3 dias.', icon: BookOpenIcon, styleClasses: 'text-sky-300 bg-sky-500/10 border-sky-400/30 hover:shadow-sky-400/20' },
+    { id: 'anotador', name: 'Anotador', description: 'Fez 3 anotações pessoais.', icon: PencilSquareIcon, styleClasses: 'text-amber-300 bg-amber-500/10 border-amber-400/30 hover:shadow-amber-400/20' },
+    { id: 'estrategista', name: 'Estrategista', description: 'Acertou todos os quizzes!', icon: CheckBadgeIcon, styleClasses: 'text-violet-300 bg-violet-500/10 border-violet-400/30 hover:shadow-violet-400/20' },
+    { id: 'semana-concluida', name: 'Semana Concluída', description: 'Parabéns! Você completou a semana!', icon: TrophyIcon, styleClasses: 'text-yellow-300 bg-yellow-500/10 border-yellow-400/30 hover:shadow-yellow-400/20' },
 ];
 
 export const TOTAL_XP_POSSIBLE = WEEK_LESSON.length * 10;

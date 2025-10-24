@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface WelcomeScreenProps {
@@ -9,8 +8,13 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-4 bg-gradient-to-br from-emerald-500 via-cyan-500 to-violet-500 text-white text-center">
       <div className="bg-black/20 backdrop-blur-xl p-8 md:p-12 rounded-2xl border border-white/10 max-w-2xl shadow-2xl animate-fade-in">
-        <h1 className="text-3xl md:text-5xl font-bold">Bem-vindo ao</h1>
-        <h2 className="text-4xl md:text-6xl font-extrabold text-cyan-200 mt-2">Abraçando a Lição 💛</h2>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center sm:text-left">
+          <img src="/logo-abrace.png" alt="Abrace Logo" className="h-20 w-20 md:h-24 md:w-24 rounded-full shadow-lg" />
+          <div>
+            <h1 className="text-3xl md:text-5xl font-bold">Bem-vindo ao</h1>
+            <h2 className="text-4xl md:text-6xl font-extrabold text-cyan-200 mt-1">Abraçando a Lição 💛</h2>
+          </div>
+        </div>
         <p className="mt-6 text-lg md:text-xl text-white/90">
           Aqui você vai viver uma jornada de fé, reflexão e descoberta diária.
         </p>

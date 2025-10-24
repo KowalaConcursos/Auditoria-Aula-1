@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import type { DayData } from '../types';
 import { BibleVerseDisplay } from './BibleVerse';
@@ -21,17 +20,23 @@ const QuestionDisplay: React.FC<{ question: DayData['questions'][0], index: numb
 
     const handleSave = () => {
         onSaveReflection(reflection);
-        // Maybe add a toast here for feedback
     };
 
     return (
-        <div className="bg-black/10 rounded-lg p-4 mb-4">
-            <h4 className="font-semibold text-lg text-white">{index + 1}️⃣ {question.text}</h4>
-            
-            <button onClick={() => setIsOpen(!isOpen)} className="text-sm text-cyan-300 hover:text-cyan-100 flex items-center mt-2">
-                Resposta Sugerida <ChevronDownIcon className={`w-4 h-4 ml-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        <div className="bg-black/10 rounded-lg p-4 mb-4 transition-all">
+            <button onClick={() => setIsOpen(!isOpen)} className="w-full text-left flex justify-between items-start group cursor-pointer">
+                <h4 className="font-semibold text-lg text-white group-hover:text-cyan-300 transition-colors pr-4">
+                    <span className="mr-2">{index + 1}️⃣</span>
+                    {question.text}
+                </h4>
+                <ChevronDownIcon className={`w-5 h-5 text-cyan-300 transition-transform flex-shrink-0 mt-1 ${isOpen ? 'rotate-180' : ''}`} />
             </button>
-            {isOpen && <p className="mt-2 text-white/80 italic">{question.suggestedAnswer}</p>}
+            
+            {isOpen && (
+                <div className="mt-3 text-white/80 italic pl-8">
+                    <p>{question.suggestedAnswer}</p>
+                </div>
+            )}
             
             <div className="mt-4">
                 <textarea
