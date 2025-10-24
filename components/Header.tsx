@@ -1,6 +1,5 @@
-
 import React, { useEffect } from 'react';
-import { LOGO_BASE64, TIMER_DURATION } from '../constants';
+import { TIMER_DURATION } from '../constants';
 import type { GameState } from '../types';
 import { SunIcon, MoonIcon, PlayIcon, PauseIcon, ArrowDownTrayIcon, ShareIcon, ArrowPathIcon } from './Icons';
 
@@ -67,7 +66,7 @@ export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onRese
         <header className="sticky top-0 z-30 p-3 bg-black/20 backdrop-blur-lg border-b border-white/10 text-white shadow-lg">
             <div className="container mx-auto flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-3">
-                    <img src={LOGO_BASE64} alt="Abrace Aracaju Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-full"/>
+                    <img src="/logo-abrace.png" alt="Abrace Aracaju Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-full"/>
                     <div>
                         <h1 className="text-lg md:text-xl font-bold whitespace-nowrap">Abraçando a Lição</h1>
                         <p className="text-xs text-white/70">IASD Abrace Aracaju</p>
