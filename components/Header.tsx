@@ -65,10 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onRese
     return (
         <header className="sticky top-0 z-30 p-3 bg-black/20 backdrop-blur-lg border-b border-white/10 text-white shadow-lg">
             <div className="container mx-auto flex flex-wrap items-center justify-between gap-2">
-                <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-white flex items-center justify-center overflow-hidden p-1">
-                        <img src="/logo-abrace.png" alt="Abrace Aracaju Logo" className="object-contain h-full w-full"/>
-                    </div>
+                <div className="flex items-center">
                     <div>
                         <h1 className="text-lg md:text-xl font-bold whitespace-nowrap">Abraçando a Lição</h1>
                         <p className="text-xs text-white/70">IASD Abrace Aracaju</p>
