@@ -1,4 +1,3 @@
-
 import type { DayData, Badge } from './types';
 import { BookOpenIcon, CheckBadgeIcon, PencilSquareIcon, SparklesIcon, TrophyIcon } from './components/Icons';
 
@@ -155,11 +154,11 @@ export const WEEK_LESSON: DayData[] = [
 ];
 
 export const BADGES: Badge[] = [
-    { id: 'primeiro-passo', name: 'Primeiro Passo', description: 'Você começou sua jornada de estudo!', icon: SparklesIcon, color: 'text-green-400' },
-    { id: 'leitor-fiel', name: 'Leitor Fiel', description: 'Estudou a lição por 3 dias.', icon: BookOpenIcon, color: 'text-sky-400' },
-    { id: 'anotador', name: 'Anotador', description: 'Fez 3 anotações pessoais.', icon: PencilSquareIcon, color: 'text-amber-400' },
-    { id: 'estrategista', name: 'Estrategista', description: 'Acertou todos os quizzes!', icon: CheckBadgeIcon, color: 'text-violet-400' },
-    { id: 'semana-concluida', name: 'Semana Concluída', description: 'Parabéns! Você completou a semana!', icon: TrophyIcon, color: 'text-yellow-400' },
+    { id: 'primeiro-passo', name: 'Primeiro Passo', description: 'Você começou sua jornada de estudo!', icon: SparklesIcon, color: 'text-green-400', shadowColor: 'shadow-green-400/50' },
+    { id: 'leitor-fiel', name: 'Leitor Fiel', description: 'Estudou a lição por 3 dias.', icon: BookOpenIcon, color: 'text-sky-400', shadowColor: 'shadow-sky-400/50' },
+    { id: 'anotador', name: 'Anotador', description: 'Fez 3 anotações pessoais.', icon: PencilSquareIcon, color: 'text-amber-400', shadowColor: 'shadow-amber-400/50' },
+    { id: 'estrategista', name: 'Estrategista', description: 'Acertou todos os quizzes!', icon: CheckBadgeIcon, color: 'text-violet-400', shadowColor: 'shadow-violet-400/50' },
+    { id: 'semana-concluida', name: 'Semana Concluída', description: 'Parabéns! Você completou a semana!', icon: TrophyIcon, color: 'text-yellow-400', shadowColor: 'shadow-yellow-400/50' },
 ];
 
 export const TOTAL_XP_POSSIBLE = WEEK_LESSON.length * 10;

@@ -32,6 +32,7 @@ export interface Badge {
   description: string;
   icon: React.ElementType;
   color: string;
+  shadowColor: string;
 }
 
 export interface GameState {
