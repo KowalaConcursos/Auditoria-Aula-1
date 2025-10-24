@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { Badge as BadgeType } from '../types';
 
@@ -9,7 +10,7 @@ export const Badge: React.FC<BadgeProps> = ({ badge }) => {
   const Icon = badge.icon;
   return (
     <div className="group relative flex flex-col items-center text-center">
-      <div className={`w-12 h-12 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 transition-all duration-300 group-hover:scale-110 group-hover:border-white/40 shadow-lg ${badge.color} ${badge.shadowColor}`}>
+      <div className={`w-12 h-12 rounded-full flex items-center justify-center bg-white/20 backdrop-blur-sm border border-white/20 transition-transform group-hover:scale-110 ${badge.color}`}>
         <Icon className="w-7 h-7" />
       </div>
       <span className="text-xs mt-1 font-medium text-white/80">{badge.name}</span>

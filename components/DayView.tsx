@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import type { DayData } from '../types';
 import { BibleVerseDisplay } from './BibleVerse';
@@ -20,31 +21,28 @@ const QuestionDisplay: React.FC<{ question: DayData['questions'][0], index: numb
 
     const handleSave = () => {
         onSaveReflection(reflection);
+        // Maybe add a toast here for feedback
     };
 
     return (
-        <div className="bg-black/10 rounded-lg mb-4">
-            <div 
-                onClick={() => setIsOpen(!isOpen)} 
-                className="p-4 flex justify-between items-center cursor-pointer hover:bg-white/5 transition-colors"
-            >
-                <h4 className="font-semibold text-lg text-white flex-1 pr-4">{index + 1}️⃣ {question.text}</h4>
-                <ChevronDownIcon className={`w-5 h-5 text-cyan-300 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-            </div>
+        <div className="bg-black/10 rounded-lg p-4 mb-4">
+            <h4 className="font-semibold text-lg text-white">{index + 1}️⃣ {question.text}</h4>
             
-            {isOpen && (
-                <div className="px-4 pb-4 animate-fade-in">
-                    <p className="mb-4 text-white/80 italic border-l-2 border-cyan-400/50 pl-3">{question.suggestedAnswer}</p>
-                    <textarea
-                        value={reflection}
-                        onChange={(e) => setReflection(e.target.value)}
-                        onBlur={handleSave}
-                        placeholder="Anote sua reflexão pessoal aqui..."
-                        className="w-full bg-black/20 text-white placeholder-white/50 rounded-md p-2 border border-white/20 focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
-                        rows={3}
-                    />
-                </div>
-            )}
+            <button onClick={() => setIsOpen(!isOpen)} className="text-sm text-cyan-300 hover:text-cyan-100 flex items-center mt-2">
+                Resposta Sugerida <ChevronDownIcon className={`w-4 h-4 ml-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {isOpen && <p className="mt-2 text-white/80 italic">{question.suggestedAnswer}</p>}
+            
+            <div className="mt-4">
+                <textarea
+                    value={reflection}
+                    onChange={(e) => setReflection(e.target.value)}
+                    onBlur={handleSave}
+                    placeholder="Anote sua reflexão pessoal aqui..."
+                    className="w-full bg-black/20 text-white placeholder-white/50 rounded-md p-2 border border-white/20 focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition"
+                    rows={3}
+                />
+            </div>
         </div>
     );
 };
