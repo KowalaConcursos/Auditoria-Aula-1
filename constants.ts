@@ -156,31 +156,31 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
     id: 0,
     dayName: 'Sábado',
     title: 'A Travessia do Jordão',
-    summary: 'Introdução à semana. Deus abre caminhos impossíveis para fortalecer nossa fé. O tema desta semana é sobre como Deus não escolhe o caminho mais fácil, mas o que mais fortalece nossa confiança nEle.',
+    summary: 'Deus abre caminhos impossíveis para fortalecer nossa fé. O objetivo desta semana é mostrar que Deus não escolhe o caminho mais fácil, mas o que mais fortalece nossa confiança nEle.',
     imageUrl: '/images/pensamentos_intrusivos.png',
     readings: ['Josué 4:24'],
     questions: [
-      { text: 'O que significa para você a frase “A mão do Senhor é forte”?', suggestedAnswer: 'Reflita sobre momentos em que você sentiu a força de Deus agindo em sua vida, especialmente em situações difíceis.' }
+      { text: 'Qual foi o ‘rio Jordão’ mais difícil que você já teve de atravessar na vida?', suggestedAnswer: 'Reflita sobre um desafio pessoal que exigiu fé para ser superado, seja nos estudos, relacionamentos ou na sua caminhada espiritual.' }
     ],
     quiz: {
-      question: 'Qual o objetivo principal da lição desta semana?',
+      question: 'Qual o verso-chave da lição desta semana?',
       options: [
-        { text: 'Aprender a nadar em rios' },
-        { text: 'Mostrar que Deus usa caminhos difíceis para fortalecer nossa fé' },
-        { text: 'Estudar a geografia de Canaã' },
-        { text: 'Memorizar os nomes das tribos' },
+        { text: 'Josué 4:24' },
+        { text: 'Salmo 23:1' },
+        { text: 'Gênesis 1:1' },
+        { text: 'João 3:16' },
       ],
-      correctAnswerIndex: 1,
+      correctAnswerIndex: 0,
     }
   },
   {
     id: 1,
     dayName: 'Domingo',
     title: 'A Travessia do Jordão',
-    summary: 'O Jordão era um rio caudaloso e perigoso na época da cheia. Deus escolheu justamente aquele momento difícil para mostrar Seu poder. Às vezes, Ele nos leva a atravessar situações desafiadoras para provar que está conosco, mesmo quando tudo parece impossível.',
+    summary: 'O Jordão era um rio caudaloso e perigoso na época da cheia. Deus escolheu justamente aquele momento difícil para mostrar Seu poder. Às vezes, Ele nos leva a atravessar situações desafiadoras para provar que está conosco.',
     readings: ['Josué 3', 'Josué 4'],
     questions: [
-      { text: 'Por que Deus mandou atravessar o rio justamente quando estava cheio?', suggestedAnswer: 'Para ensinar o povo a confiar mesmo quando o cenário parecia impossível; para revelar Seu poder nos momentos mais improváveis.' },
+      { text: 'Por que Deus mandou atravessar o rio justamente quando estava cheio?', suggestedAnswer: 'Para ensinar o povo a confiar mesmo quando o cenário parecia impossível e revelar Seu poder nos momentos mais improváveis.' },
       { text: 'Como essa travessia aumentou a fé de Israel?', suggestedAnswer: 'Eles viram o milagre com os próprios olhos e entenderam que o Deus de Moisés continuava sendo o mesmo com Josué.' }
     ],
     quiz: {
@@ -219,7 +219,7 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
     id: 3,
     dayName: 'Terça',
     title: 'A Força da União',
-    summary: 'As tribos de Rúben, Gade e metade de Manassés já tinham recebido suas terras, mas foram chamadas a ajudar as demais tribos a conquistar Canaã. A travessia e a vitória seriam coletivas, não individuais.',
+    summary: 'As tribos de Rúben, Gade e metade de Manassés já tinham recebido suas terras, mas foram chamadas a ajudar as demais tribos a conquistar Canaã. A vitória seria coletiva, não individual.',
     readings: ['Josué 1:12-18', 'Deuteronômio 3:18'],
     questions: [
       { text: 'Por que Deus exigiu que todos atravessassem juntos?', suggestedAnswer: 'Porque a promessa era para todo o povo; a unidade fortalece a fé e o testemunho.' },
@@ -281,8 +281,8 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
   {
     id: 6,
     dayName: 'Sexta',
-    title: 'Indo Até o Limite',
-    summary: 'A travessia foi prova da presença de Deus. Espiritualmente, Ele nos leva ao limite, onde nossa força acaba e a confiança nEle começa, para mostrar que Sua mão é forte.',
+    title: 'Indo "Até a Falha"!',
+    summary: 'Espiritualmente, ir "até a falha" é o ponto em que a força humana acaba e a confiança em Deus começa. Ele permite que cheguemos ao limite para mostrar que Sua mão é forte.',
     readings: ['Josué 4:24', 'Patriarcas e Profetas, p. 422-423'],
     questions: [
       { text: 'Por que Deus nos leva “até o limite”?', suggestedAnswer: 'Porque é nesse ponto que deixamos de confiar em nós e passamos a depender completamente dEle.' },
