@@ -151,6 +151,159 @@ export const WEEK_LESSON: DayData[] = [
   }
 ];
 
+export const WEEK_LESSON_JOVEM: DayData[] = [
+  {
+    id: 0,
+    dayName: 'Sábado',
+    title: 'O Conflito por Trás da Travessia',
+    summary: 'Introdução à semana: Qual foi o "rio Jordão" mais difícil que você já teve de atravessar na vida?',
+    readings: [],
+    questions: [
+      { text: 'Qual foi o ‘rio Jordão’ mais difícil que você já teve de atravessar na vida?', suggestedAnswer: 'Reflita sobre um desafio pessoal que exigiu fé para ser superado, seja nos estudos, relacionamentos ou na sua caminhada espiritual.' }
+    ],
+    quiz: {
+      question: 'Qual o tema central da lição desta semana?',
+      options: [
+        { text: 'A construção do Templo' },
+        { text: 'A Travessia do Jordão' },
+        { text: 'A vida de Davi' },
+        { text: 'As viagens de Paulo' },
+      ],
+      correctAnswerIndex: 1,
+    }
+  },
+  {
+    id: 1,
+    dayName: 'Domingo',
+    title: 'A Travessia do Jordão',
+    summary: 'Deus quer que o poder d’Ele seja evidente, mesmo nas situações mais desafiadoras.',
+    readings: ['Josué 3', 'Josué 4'],
+    questions: [
+      { text: 'Por que Deus mandou atravessar justamente quando o rio estava transbordando?', suggestedAnswer: 'Para demonstrar Seu poder de forma inquestionável e construir uma fé que não depende de circunstâncias favoráveis, mas da Sua palavra.' },
+      { text: 'Que tipo de fé é construída quando obedecemos em meio ao risco?', suggestedAnswer: 'Uma fé robusta e prática, baseada na confiança em Deus e não na lógica humana ou na segurança que podemos ver.' },
+      { text: 'Como podemos aplicar isso hoje em situações de incerteza?', suggestedAnswer: 'Dando o primeiro passo de obediência, mesmo sem ver a solução completa, confiando que Deus abrirá o caminho à medida que avançamos.' }
+    ],
+    quiz: {
+      question: 'Por que Deus escolheu o momento da cheia do Jordão para a travessia?',
+      options: [
+        { text: 'Era a única época possível' },
+        { text: 'Para que Seu poder ficasse mais evidente' },
+        { text: 'Foi uma coincidência' },
+        { text: 'Para testar a força física do povo' },
+      ],
+      correctAnswerIndex: 1,
+    }
+  },
+  {
+    id: 2,
+    dayName: 'Segunda',
+    title: 'Seguindo em Frente com Fé',
+    summary: 'A fé é ação, não uma espera passiva. O milagre começa quando damos o primeiro passo.',
+    readings: ['Josué 3:5-17'],
+    questions: [
+      { text: 'O que significa “santificar-se” antes do agir de Deus?', suggestedAnswer: 'Significa se preparar espiritualmente, se consagrar e alinhar o coração com o propósito de Deus, mostrando que levamos a sério o que Ele vai fazer.' },
+      { text: 'Por que Deus exige ação antes de mostrar o milagre?', suggestedAnswer: 'Porque a ação demonstra nossa confiança e dependência dEle. É um ato de fé que ativa a promessa divina.' },
+      { text: 'Qual é o Jordão que Deus está chamando você a atravessar hoje?', suggestedAnswer: 'Pode ser uma decisão difícil, uma conversa necessária, o abandono de um hábito ruim ou o início de um novo projeto que parece assustador.' }
+    ],
+    quiz: {
+      question: 'De acordo com Josué 3:5, o que o povo deveria fazer antes de Deus operar maravilhas?',
+      options: [
+        { text: 'Construir barcos' },
+        { text: 'Reclamar' },
+        { text: 'Santificar-se' },
+        { text: 'Negociar com os inimigos' },
+      ],
+      correctAnswerIndex: 2,
+    }
+  },
+  {
+    id: 3,
+    dayName: 'Terça',
+    title: 'A Força da União',
+    summary: 'A fé se fortalece quando vivida em comunidade. Não atravessamos nossos desafios sozinhos.',
+    readings: ['Josué 1:12-18', 'Deuteronômio 3:18', 'Gálatas 6:2'],
+    questions: [
+      { text: 'Por que Deus mandou as tribos que já tinham suas terras ajudarem as outras?', suggestedAnswer: 'Para ensinar que a bênção individual está conectada ao bem-estar da comunidade. A vitória de um é a vitória de todos.' },
+      { text: 'Como aplicamos o princípio de "levar as cargas uns dos outros" na prática?', suggestedAnswer: 'Ouvindo um amigo que precisa desabafar, orando por alguém, ajudando em uma tarefa, oferecendo apoio em momentos difíceis.' },
+      { text: 'Que atitudes mostram que você está marchando junto com seus irmãos na fé?', suggestedAnswer: 'Participar ativamente na igreja, se envolver em projetos missionários, encorajar os outros e celebrar suas vitórias.' }
+    ],
+    quiz: {
+      question: 'Qual o principal ensinamento sobre as tribos que ajudaram as outras?',
+      options: [
+        { text: 'A importância da competição' },
+        { text: 'A necessidade de treinamento militar' },
+        { text: 'A força da fé vivida em comunidade' },
+        { text: 'A superioridade de algumas tribos' },
+      ],
+      correctAnswerIndex: 2,
+    }
+  },
+  {
+    id: 4,
+    dayName: 'Quarta',
+    title: 'Momento Hipertexto: Travessias da Vida',
+    summary: 'Cada travessia nos ensina algo, e cada lembrança nos prepara para o próximo desafio.',
+    readings: ['Salmo 103:2', 'Êxodo 16:32-34', '1 Samuel 7:12'],
+    questions: [
+      { text: 'O que você faz para lembrar das vezes em que Deus abriu um caminho para você?', suggestedAnswer: 'Manter um diário de gratidão, compartilhar testemunhos com amigos, guardar objetos que simbolizam uma vitória ou criar uma playlist de músicas que marcaram esses momentos.' }
+    ],
+    quiz: {
+      question: 'Qual o propósito de lembrar das bênçãos e vitórias passadas?',
+      options: [
+        { text: 'Viver no passado' },
+        { text: 'Fortalecer a fé para os desafios futuros' },
+        { text: 'Comparar-se com os outros' },
+        { text: 'Apenas por tradição' },
+      ],
+      correctAnswerIndex: 1,
+    }
+  },
+  {
+    id: 5,
+    dayName: 'Quinta',
+    title: 'Contando Histórias que Marcam',
+    summary: 'As pedras da memória nos ensinam a valorizar o testemunho e a lembrança dos feitos de Deus.',
+    readings: ['Josué 4:1-7', 'Apocalipse 12:11'],
+    questions: [
+      { text: 'Por que Deus deu tanta importância para a criação de memoriais?', suggestedAnswer: 'Porque a memória humana é falha. Os memoriais servem como gatilhos para a gratidão e como ferramentas de ensino para as futuras gerações.' },
+      { text: 'Como as histórias de fé (testemunhos) fortalecem a igreja hoje?', suggestedAnswer: 'Elas tornam Deus real e próximo, encorajam quem está passando por lutas parecidas e provam que a Palavra de Deus continua se cumprindo.' },
+      { text: 'Que tipo de “memorial” você poderia criar na sua vida ou na sua casa?', suggestedAnswer: 'Um pote de gratidão, um quadro com versículos que marcaram vitórias, um álbum de fotos de momentos de superação, ou até mesmo um projeto social como forma de agradecer.' }
+    ],
+    quiz: {
+      question: 'Qual era o objetivo das doze pedras tiradas do Jordão?',
+      options: [
+        { text: 'Construir uma casa para Josué' },
+        { text: 'Servir como um memorial dos feitos de Deus' },
+        { text: 'Serem usadas como armas' },
+        { text: 'Demarcar território' },
+      ],
+      correctAnswerIndex: 1,
+    }
+  },
+  {
+    id: 6,
+    dayName: 'Sexta',
+    title: 'Transmitindo Confiança',
+    summary: 'O poder de lembrar e ensinar o que Deus fez nos prepara para o futuro e fortalece a fé dos outros.',
+    readings: ['Patriarcas e Profetas, p. 422-423'],
+    questions: [
+      { text: 'Por que Deus nem sempre escolhe o caminho mais fácil para nós?', suggestedAnswer: 'Porque os caminhos difíceis são os que mais desenvolvem nosso caráter, nossa dependência dEle e nossa fé.' },
+      { text: 'Que hábitos nos ajudam a não esquecer das bênçãos de Deus?', suggestedAnswer: 'A oração de gratidão diária, o estudo da Bíblia, compartilhar testemunhos e servir ao próximo.' }
+    ],
+    quiz: {
+      question: 'Qual é um dos principais motivos para Deus não escolher o caminho mais fácil?',
+      options: [
+        { text: 'Para nos fazer sofrer' },
+        { text: 'Para desenvolver nosso caráter e fé' },
+        { text: 'Porque Ele não se importa' },
+        { text: 'Para nos testar de forma aleatória' },
+      ],
+      correctAnswerIndex: 1,
+    }
+  }
+];
+
+
 export const BADGES: Badge[] = [
     { id: 'primeiro-passo', name: 'Primeiro Passo', description: 'Você começou sua jornada de estudo!', icon: SparklesIcon, styleClasses: 'text-green-300 bg-green-500/10 border-green-400/30 hover:shadow-green-400/20' },
     { id: 'leitor-fiel', name: 'Leitor Fiel', description: 'Estudou a lição por 3 dias.', icon: BookOpenIcon, styleClasses: 'text-sky-300 bg-sky-500/10 border-sky-400/30 hover:shadow-sky-400/20' },

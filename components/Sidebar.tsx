@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { WEEK_LESSON, BADGES } from '../constants';
+import { WEEK_LESSON, WEEK_LESSON_JOVEM, BADGES } from '../constants';
 import type { GameState } from '../types';
 import { Badge } from './Badge';
 
@@ -11,8 +10,9 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ gameState, currentDay, onSelectDay }) => {
-  const { lastCompletedDay, badgesEarned } = gameState;
-  const progress = lastCompletedDay > -1 ? Math.round(((lastCompletedDay + 1) / WEEK_LESSON.length) * 100) : 0;
+  const { lastCompletedDay, badgesEarned, lessonType } = gameState;
+  const activeLesson = lessonType === 'jovem' ? WEEK_LESSON_JOVEM : WEEK_LESSON;
+  const progress = lastCompletedDay > -1 ? Math.round(((lastCompletedDay + 1) / activeLesson.length) * 100) : 0;
 
   const earnedBadges = BADGES.filter(badge => badgesEarned.includes(badge.id));
 
@@ -22,7 +22,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ gameState, currentDay, onSelec
       <div>
         <h3 className="font-bold text-lg mb-3">Dias da Semana</h3>
         <ul className="space-y-2">
-          {WEEK_LESSON.map((day, index) => {
+          {activeLesson.map((day, index) => {
             const isUnlocked = index <= lastCompletedDay + 1;
             const isCompleted = index <= lastCompletedDay;
             const isCurrent = index === currentDay;

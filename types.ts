@@ -43,6 +43,7 @@ export interface GameState {
   badgesEarned: string[];
   hasStarted: boolean;
   theme: 'light' | 'dark';
+  lessonType: 'adult' | 'jovem';
   timer: {
     isActive: boolean;
     seconds: number;

@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useCallback } from 'react';
 import type { GameState } from '../types';
 import { BADGES, WEEK_LESSON } from '../constants';
@@ -12,6 +11,10 @@ const getInitialState = (): GameState => {
             const parsed = JSON.parse(savedState);
             // Ensure timer state is reset on load
             parsed.timer = { isActive: false, seconds: 55 * 60 };
+            // Set default lesson type if not present
+            if (!parsed.lessonType) {
+                parsed.lessonType = 'adult';
+            }
             return parsed;
         } catch (e) {
             console.error("Failed to parse saved state:", e);
@@ -26,6 +29,7 @@ const getInitialState = (): GameState => {
         badgesEarned: ['primeiro-passo'],
         hasStarted: false,
         theme: 'dark',
+        lessonType: 'adult',
         timer: { isActive: false, seconds: 55 * 60 },
     };
 };
@@ -137,12 +141,13 @@ export const useLessonState = () => {
         }));
     };
 
-    const startGame = () => updateState(prev => ({ ...prev, hasStarted: true }));
+    const startGame = (lessonType: 'adult' | 'jovem') => updateState(prev => ({ ...prev, hasStarted: true, lessonType }));
     const toggleTheme = () => updateState(prev => ({ ...prev, theme: prev.theme === 'light' ? 'dark' : 'light' }));
 
     const resetProgress = () => {
         if (window.confirm("Você tem certeza que deseja apagar todo o seu progresso? Esta ação não pode ser desfeita.")) {
             const theme = state.theme; // Keep theme preference
+            const lessonType = state.lessonType; // Keep lesson type
             localStorage.removeItem(LOCAL_STORAGE_KEY);
             setState({
                  xp: 0,
@@ -153,6 +158,7 @@ export const useLessonState = () => {
                 badgesEarned: ['primeiro-passo'],
                 hasStarted: true,
                 theme: theme,
+                lessonType: lessonType,
                 timer: { isActive: false, seconds: 55 * 60 },
             });
         }

@@ -20,8 +20,9 @@ const formatTime = (seconds: number) => {
 };
 
 export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onReset, onExport, onPrayerClick, onTimerToggle, onTimerTick }) => {
-    const { xp, lastCompletedDay, theme, timer } = gameState;
+    const { xp, lastCompletedDay, theme, timer, lessonType } = gameState;
     const progress = lastCompletedDay > -1 ? Math.round(((lastCompletedDay + 1) / 7) * 100) : 0;
+    const title = lessonType === 'jovem' ? "Abraçando a Lição Jovem" : "Abraçando a Lição";
     
     useEffect(() => {
         let interval: number | undefined;
@@ -67,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onRese
             <div className="container mx-auto flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center">
                     <div>
-                        <h1 className="text-lg md:text-xl font-bold whitespace-nowrap">Abraçando a Lição</h1>
+                        <h1 className="text-lg md:text-xl font-bold whitespace-nowrap">{title}</h1>
                         <p className="text-xs text-white/70">IASD Abrace Aracaju</p>
                     </div>
                 </div>
