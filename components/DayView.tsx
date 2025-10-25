@@ -106,6 +106,12 @@ export const DayView: React.FC<DayViewProps> = ({ day, isUnlocked, onQuizComplet
       <h2 className="text-3xl md:text-4xl font-bold text-cyan-300">{day.title}</h2>
       <p className="mt-2 text-white/90">{day.summary}</p>
       
+      {day.imageUrl && (
+        <div className="my-6">
+          <img src={day.imageUrl} alt={day.title} className="rounded-lg shadow-lg w-full" />
+        </div>
+      )}
+
       <div className="my-6">
         {day.readings.map(ref => <BibleVerseDisplay key={ref} reference={ref} />)}
       </div>

@@ -157,6 +157,7 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
     dayName: 'Sábado',
     title: 'O Conflito por Trás da Travessia',
     summary: 'Introdução à semana: Qual foi o "rio Jordão" mais difícil que você já teve de atravessar na vida?',
+    imageUrl: '/images/pensamentos_intrusivos.png',
     readings: [],
     questions: [
       { text: 'Qual foi o ‘rio Jordão’ mais difícil que você já teve de atravessar na vida?', suggestedAnswer: 'Reflita sobre um desafio pessoal que exigiu fé para ser superado, seja nos estudos, relacionamentos ou na sua caminhada espiritual.' }

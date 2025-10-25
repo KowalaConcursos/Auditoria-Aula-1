@@ -21,6 +21,7 @@ export interface DayData {
   dayName: string;
   title: string;
   summary: string;
+  imageUrl?: string;
   readings: string[];
   questions: Question[];
   quiz: Quiz;
