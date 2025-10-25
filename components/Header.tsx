@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { TIMER_DURATION } from '../constants';
 import type { GameState } from '../types';
-import { SunIcon, MoonIcon, PlayIcon, PauseIcon, ArrowDownTrayIcon, ShareIcon, ArrowPathIcon } from './Icons';
+import { SunIcon, MoonIcon, PlayIcon, PauseIcon, ArrowDownTrayIcon, ShareIcon, ArrowPathIcon, PhotoIcon } from './Icons';
 
 interface HeaderProps {
   gameState: GameState;
@@ -9,6 +9,7 @@ interface HeaderProps {
   onReset: () => void;
   onExport: () => void;
   onPrayerClick: () => void;
+  onTirinhaClick: () => void;
   onTimerToggle: (isActive: boolean) => void;
   onTimerTick: (seconds: number) => void;
 }
@@ -19,7 +20,7 @@ const formatTime = (seconds: number) => {
     return `${mins}:${secs}`;
 };
 
-export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onReset, onExport, onPrayerClick, onTimerToggle, onTimerTick }) => {
+export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onReset, onExport, onPrayerClick, onTirinhaClick, onTimerToggle, onTimerTick }) => {
     const { xp, lastCompletedDay, theme, timer, lessonType } = gameState;
     const progress = lastCompletedDay > -1 ? Math.round(((lastCompletedDay + 1) / 7) * 100) : 0;
     const title = lessonType === 'jovem' ? "Abraçando a Lição Jovem" : "Abraçando a Lição";
@@ -94,6 +95,9 @@ export const Header: React.FC<HeaderProps> = ({ gameState, onToggleTheme, onRese
                     </button>
                      <button onClick={handleShare} className="p-2 rounded-full hover:bg-white/20 transition-colors" title="Compartilhar">
                         <ShareIcon className="w-5 h-5"/>
+                    </button>
+                    <button onClick={onTirinhaClick} className="p-2 rounded-full hover:bg-white/20 transition-colors" title="Tirinha da Semana">
+                        <PhotoIcon className="w-5 h-5"/>
                     </button>
                      <button onClick={onPrayerClick} className="p-2 rounded-full hover:bg-white/20 transition-colors hidden sm:block" title="Oração do Dia">
                         🙏

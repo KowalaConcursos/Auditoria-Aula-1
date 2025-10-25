@@ -7,11 +7,13 @@ import { DayView } from './components/DayView';
 import { WelcomeScreen } from './components/WelcomeScreen';
 import { Toast } from './components/Toast';
 import { PrayerModal } from './components/PrayerModal';
+import { TirinhaModal } from './components/TirinhaModal';
 
 export default function App() {
     const lessonState = useLessonState();
     const [currentDayId, setCurrentDayId] = useState(0);
     const [isPrayerModalOpen, setIsPrayerModalOpen] = useState(false);
+    const [isTirinhaModalOpen, setIsTirinhaModalOpen] = useState(false);
 
     const activeLesson = lessonState.lessonType === 'jovem' ? WEEK_LESSON_JOVEM : WEEK_LESSON;
 
@@ -59,6 +61,7 @@ export default function App() {
                 onReset={lessonState.resetProgress}
                 onExport={handleExportNotes}
                 onPrayerClick={() => setIsPrayerModalOpen(true)}
+                onTirinhaClick={() => setIsTirinhaModalOpen(true)}
                 onTimerToggle={lessonState.setTimerActive}
                 onTimerTick={lessonState.setTimerSeconds}
             />
@@ -84,6 +87,7 @@ export default function App() {
             </main>
             <Toast message={lessonState.showToast} />
             <PrayerModal isOpen={isPrayerModalOpen} onClose={() => setIsPrayerModalOpen(false)} />
+            <TirinhaModal isOpen={isTirinhaModalOpen} onClose={() => setIsTirinhaModalOpen(false)} />
         </div>
     );
 }
