@@ -23,7 +23,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ gameState, currentDay, onSelec
         <h3 className="font-bold text-lg mb-3">Dias da Semana</h3>
         <ul className="space-y-2">
           {activeLesson.map((day, index) => {
-            const isUnlocked = index <= lastCompletedDay + 1;
             const isCompleted = index <= lastCompletedDay;
             const isCurrent = index === currentDay;
 
@@ -31,14 +30,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ gameState, currentDay, onSelec
               <li key={day.id}>
                 <button
                   onClick={() => onSelectDay(day.id)}
-                  disabled={!isUnlocked}
                   className={`w-full text-left p-3 rounded-lg flex items-center justify-between transition-all duration-200 
-                    ${isCurrent ? 'bg-cyan-500/40' : 'bg-white/10 hover:bg-white/20'}
-                    ${!isUnlocked ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    ${isCurrent ? 'bg-cyan-500/40' : 'bg-white/10 hover:bg-white/20'}`}
                 >
                   <span className="font-semibold">{day.dayName}</span>
                   {isCompleted && <span className="text-green-300">✓</span>}
-                  {!isUnlocked && <span>🔒</span>}
                 </button>
               </li>
             );

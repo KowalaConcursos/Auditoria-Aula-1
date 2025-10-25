@@ -76,7 +76,7 @@ export default function App() {
                     )}
                     <DayView
                         day={activeLesson[currentDayId]}
-                        isUnlocked={currentDayId <= lessonState.lastCompletedDay + 1}
+                        isUnlocked={true}
                         onQuizComplete={handleQuizComplete}
                         initialNote={lessonState.notes[currentDayId] || ''}
                         onSaveNote={(note) => lessonState.saveNote(currentDayId, note)}

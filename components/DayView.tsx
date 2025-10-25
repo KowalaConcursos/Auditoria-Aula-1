@@ -89,16 +89,9 @@ const Notes: React.FC<{ initialNote: string, onSave: (note: string) => void }> =
 };
 
 export const DayView: React.FC<DayViewProps> = ({ day, isUnlocked, onQuizComplete, initialNote, onSaveNote, initialReflections, onSaveReflection }) => {
+  // A lógica de bloqueio foi removida, mas mantemos a verificação para segurança.
   if (!isUnlocked) {
-    return (
-      <div className="flex items-center justify-center h-full text-center p-8">
-        <div>
-          <span className="text-5xl">🔒</span>
-          <h2 className="text-2xl font-bold text-white mt-4">Dia Bloqueado</h2>
-          <p className="text-white/80 mt-2">Complete o quiz do dia anterior para desbloquear.</p>
-        </div>
-      </div>
-    );
+    return null; // Não deve mais acontecer, mas é uma boa prática.
   }
 
   return (
