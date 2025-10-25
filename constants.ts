@@ -184,14 +184,14 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
       { text: 'Como essa travessia aumentou a fé de Israel?', suggestedAnswer: 'Eles viram o milagre com os próprios olhos e entenderam que o Deus de Moisés continuava sendo o mesmo com Josué.' }
     ],
     quiz: {
-      question: 'Por que Deus escolheu o momento da cheia do Jordão para a travessia?',
+      question: 'Qual era a condição do rio Jordão quando os israelitas o atravessaram?',
       options: [
-        { text: 'Para testar a força física do povo' },
-        { text: 'Para mostrar Seu poder de forma mais clara' },
-        { text: 'Porque era a única época do ano possível' },
-        { text: 'Foi uma coincidência' },
+        { text: 'Seco e com pouca água' },
+        { text: 'Congelado' },
+        { text: 'Na época da cheia, caudaloso e perigoso' },
+        { text: 'Calmo e raso' },
       ],
-      correctAnswerIndex: 1,
+      correctAnswerIndex: 2,
     }
   },
   {
@@ -205,14 +205,14 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
       { text: 'Por que Deus esperou os sacerdotes darem o primeiro passo?', suggestedAnswer: 'Porque a fé se manifesta no movimento; é preciso agir antes de ver o milagre.' }
     ],
     quiz: {
-      question: 'O que a história dos sacerdotes pisando na água nos ensina?',
+      question: 'O que os israelitas precisaram fazer para que o milagre acontecesse?',
       options: [
-        { text: 'Que devemos sempre esperar' },
-        { text: 'Que a fé verdadeira envolve ação' },
-        { text: 'Que os sacerdotes sabiam nadar' },
-        { text: 'Que a água não era funda' },
+        { text: 'Construir uma ponte' },
+        { text: 'Esperar o rio secar' },
+        { text: 'Os sacerdotes precisaram pisar na água' },
+        { text: 'Oferecer um sacrifício' },
       ],
-      correctAnswerIndex: 1,
+      correctAnswerIndex: 2,
     }
   },
   {
@@ -226,12 +226,12 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
       { text: 'Como aplicamos isso hoje na igreja?', suggestedAnswer: 'Ajudando uns aos outros, compartilhando o peso das lutas e servindo além do nosso conforto.' }
     ],
     quiz: {
-      question: 'Qual a lição sobre as tribos que já tinham suas terras?',
+      question: 'Qual foi a lição principal sobre as tribos que já tinham suas terras?',
       options: [
-        { text: 'Que elas eram mais importantes' },
-        { text: 'Que a fé é fortalecida em comunidade e união' },
-        { text: 'Que elas deveriam lutar sozinhas' },
-        { text: 'Que a divisão de terras era injusta' },
+        { text: 'Que elas eram mais fortes que as outras' },
+        { text: 'Que a vitória é coletiva e a união é essencial' },
+        { text: 'Que elas poderiam descansar enquanto os outros lutavam' },
+        { text: 'Que elas deveriam liderar o ataque' },
       ],
       correctAnswerIndex: 1,
     }
@@ -247,14 +247,14 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
       { text: 'Que tipo de “travessia” Deus já o ajudou a vencer?', suggestedAnswer: 'Momentos de medo, decisões difíceis, períodos de incerteza — cada um é um testemunho de livramento.' }
     ],
     quiz: {
-      question: 'Por que é importante lembrar das vitórias passadas?',
+      question: 'Qual o propósito de lembrar das vitórias passadas?',
       options: [
-        { text: 'Para se orgulhar' },
-        { text: 'Para se comparar com os outros' },
-        { text: 'Para alimentar a fé para as futuras batalhas' },
-        { text: 'Para viver no passado' },
+        { text: 'Viver no passado' },
+        { text: 'Alimentar a fé para as futuras batalhas' },
+        { text: 'Gabar-se para os outros' },
+        { text: 'Esquecer os problemas atuais' },
       ],
-      correctAnswerIndex: 2,
+      correctAnswerIndex: 1,
     }
   },
   {
@@ -268,33 +268,33 @@ export const WEEK_LESSON_JOVEM: DayData[] = [
       { text: 'Como podemos criar “memoriais” hoje?', suggestedAnswer: 'Registrando bênçãos, compartilhando testemunhos, contando histórias de fé aos outros.' }
     ],
     quiz: {
-      question: 'Qual era o propósito das doze pedras do Jordão?',
+      question: 'Qual era o propósito das doze pedras tiradas do Jordão?',
       options: [
-        { text: 'Servir como um memorial para as futuras gerações' },
-        { text: 'Construir um altar para sacrifícios' },
-        { text: 'Demarcar o território' },
-        { text: 'Serem usadas como armas' },
+        { text: 'Construir uma casa para Josué' },
+        { text: 'Servir como um memorial da fidelidade de Deus' },
+        { text: 'Marcar a fronteira do território' },
+        { text: 'Serem usadas como armas na próxima batalha' },
       ],
-      correctAnswerIndex: 0,
+      correctAnswerIndex: 1,
     }
   },
   {
     id: 6,
     dayName: 'Sexta',
-    title: 'Indo "Até a Falha"!',
-    summary: 'Espiritualmente, ir "até a falha" é o ponto em que a força humana acaba e a confiança em Deus começa. Ele permite que cheguemos ao limite para mostrar que Sua mão é forte.',
+    title: 'Transmitindo Confiança e Indo "Até a Falha"!',
+    summary: 'A travessia foi prova da presença de Deus. Espiritualmente, ir "até a falha" é o ponto em que a força humana acaba e a confiança em Deus começa. Ele permite que cheguemos ao limite para mostrar que Sua mão é forte.',
     readings: ['Josué 4:24', 'Patriarcas e Profetas, p. 422-423'],
     questions: [
-      { text: 'Por que Deus nos leva “até o limite”?', suggestedAnswer: 'Porque é nesse ponto que deixamos de confiar em nós e passamos a depender completamente dEle.' },
-      { text: 'O que significa ser um “outdoor do poder de Deus”?', suggestedAnswer: 'É viver de modo que as pessoas vejam em nós provas do poder, amor e fidelidade de Deus.' }
+      { text: 'Por que Deus nem sempre guia pelo caminho mais fácil?', suggestedAnswer: 'Porque os caminhos difíceis revelam Sua força e nos ensinam a depender dEle.' },
+      { text: 'Por que Deus nos leva “até o limite”?', suggestedAnswer: 'Porque é nesse ponto que deixamos de confiar em nós e passamos a depender completamente dEle.' }
     ],
     quiz: {
-      question: 'O que acontece quando chegamos ao nosso limite, segundo a lição?',
+      question: 'O que a lição ensina sobre chegar ao nosso limite?',
       options: [
-        { text: 'Nós devemos desistir' },
-        { text: 'É o ponto onde a força de Deus começa a agir' },
-        { text: 'Significa que falhamos' },
-        { text: 'Devemos pedir ajuda a outras pessoas' },
+        { text: 'Que é hora de desistir' },
+        { text: 'Que é o momento em que a força de Deus se manifesta' },
+        { text: 'Que falhamos em nossa missão' },
+        { text: 'Que precisamos de mais treinamento físico' },
       ],
       correctAnswerIndex: 1,
     }
